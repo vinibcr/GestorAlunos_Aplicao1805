@@ -232,5 +232,5 @@ class HomeFragment : Fragment() {
 }
 
 object UrlManager {
-    var baseUrl = "https://application-service2-production.up.railway.app"
+    var baseUrl = "*************************"
 }
