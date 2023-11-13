@@ -20,17 +20,19 @@
         <Button
                 android:id="@+id/segunda_feira_button"
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="40dp"
                 android:text="MONDAY"
                 android:visibility="visible"
                 android:layout_gravity="center"
-                android:layout_marginTop="3dp"/>
+                android:layout_marginTop="3dp"
+                android:backgroundTint="#833AEA"/>
 
         <Button
                 android:id="@+id/terca_feira_button"
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="40dp"
                 android:text="TUESDAY"
+                android:backgroundTint="#833AEA"
                 android:visibility="visible"
                 android:layout_gravity="center"
                 android:layout_marginTop="3dp"/>
@@ -38,17 +40,19 @@
         <Button
                 android:id="@+id/quarta_feira_button"
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="40dp"
                 android:visibility="visible"
                 android:text="WEDNESDAY"
+                android:backgroundTint="#833AEA"
                 android:layout_gravity="center"
                 android:layout_marginTop="3dp"/>
 
         <Button
                 android:id="@+id/quinta_feira_button"
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="40dp"
                 android:visibility="visible"
+                android:backgroundTint="#833AEA"
                 android:text="THURSDAY"
                 android:layout_gravity="center"
                 android:layout_marginTop="3dp"/>
@@ -56,21 +60,22 @@
         <Button
                 android:id="@+id/sexta_feira_button"
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="40dp"
                 android:visibility="visible"
                 android:text="FRIDAY"
+                android:backgroundTint="#833AEA"
                 android:layout_gravity="center"
                 android:layout_marginTop="3dp"/>
 
         <Button
                 android:id="@+id/outros_button"
                 android:layout_width="match_parent"
-                android:layout_height="36dp"
+                android:layout_height="40dp"
                 android:visibility="visible"
                 android:text="Digitar tópico específico"
                 android:layout_gravity="center"
                 android:layout_marginTop="3dp"
-                android:backgroundTint="@color/design_default_color_secondary_variant"/>
+                android:backgroundTint="#408EA6"/>
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -107,7 +112,7 @@
         <Button
                 android:id="@+id/ir_para_quiz_button"
                 android:layout_width="wrap_content"
-                android:layout_height="36dp"
+                android:layout_height="40dp"
                 android:text="Ir para o Quiz"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"/>
@@ -147,6 +152,7 @@
             <!-- Adicione o CardView aqui -->
             <androidx.cardview.widget.CardView
                     android:id="@+id/quizCardView1"
+                    app:cardCornerRadius="30dp"
                     android:layout_width="match_parent"
                     android:layout_below="@id/text_slideshow"
                     android:layout_margin="16dp"
@@ -182,6 +188,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="a"
+                                android:backgroundTint="#408EA6"
                                 android:padding="8dp"
                                 android:layout_marginEnd="4dp" />
 
@@ -191,6 +198,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="b"
+                                android:backgroundTint="#408EA6"
                                 android:padding="8dp"
                                 android:layout_marginEnd="4dp" />
 
@@ -200,6 +208,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="c"
+                                android:backgroundTint="#408EA6"
                                 android:padding="8dp"
                                 android:layout_marginEnd="4dp" />
 
@@ -209,6 +218,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="d"
+                                android:backgroundTint="#408EA6"
                                 android:padding="8dp" />
 
                     </LinearLayout>
@@ -227,6 +237,7 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="30dp"
                     android:id="@+id/quizCardView2"
                     android:layout_width="match_parent"
                     android:layout_below="@id/text_slideshow"
@@ -264,6 +275,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="a"
+                                android:backgroundTint="#408EA6"
                                 android:padding="8dp"
                                 android:layout_marginEnd="4dp" />
 
@@ -273,6 +285,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="b"
+                                android:backgroundTint="#408EA6"
                                 android:padding="8dp"
                                 android:layout_marginEnd="4dp" />
 
@@ -282,6 +295,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="c"
+                                android:backgroundTint="#408EA6"
                                 android:padding="8dp"
 
                                 android:layout_marginEnd="4dp" />
@@ -292,6 +306,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="d"
+                                android:backgroundTint="#408EA6"
                                 android:padding="8dp"
                                 android:layout_marginEnd="4dp" />
 
@@ -311,6 +326,7 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="30dp"
                     android:id="@+id/quizCardView3"
                     android:layout_width="match_parent"
                     android:layout_below="@id/text_slideshow"
@@ -348,6 +364,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="a"
+                                android:backgroundTint="#408EA6"
                                 android:padding="8dp"
                                 android:layout_marginEnd="4dp" />
 
@@ -357,6 +374,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="b"
+                                android:backgroundTint="#408EA6"
                                 android:padding="8dp"
                                 android:layout_marginEnd="4dp" />
 
@@ -366,6 +384,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="c"
+                                android:backgroundTint="#408EA6"
                                 android:padding="8dp"
                                 android:layout_marginEnd="4dp" />
                         <Button
@@ -374,6 +393,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="d"
+                                android:backgroundTint="#408EA6"
                                 android:padding="8dp"
                                 android:layout_marginEnd="4dp" />
 
