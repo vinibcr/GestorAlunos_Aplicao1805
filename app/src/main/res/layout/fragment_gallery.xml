@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:background="#e0e0e0"
+                android:layout_height="match_parent">
+
+    <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#D7CBEA"/>
+
+
+    <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginBottom="6dp">
+
+        <Button
+                android:id="@+id/buttonPresence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Presença"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/design_default_color_secondary_variant"/>
+        />
+
+        <Button
+                android:id="@+id/buttonAbsence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Falta"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/design_default_color_secondary_variant"/>
+        />
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:layout_below="@+id/calendarView"
+            android:layout_marginTop="27dp">
+
+        <TextView
+                android:id="@+id/textViewPresencePercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        <CheckBox
+                android:id="@+id/checkboxTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrar tópico" />
+    </LinearLayout>
+
+</RelativeLayout>
