@@ -307,14 +307,22 @@ class SlideshowFragment : Fragment() {
 
                                             }
                                             else{
+                                                activity?.runOnUiThread {
+                                                    Toast.makeText(
+                                                        requireContext(),
+                                                        "Tente novamente, erro ao montar o Quiz 1",
+                                                        Toast.LENGTH_SHORT
+                                                    ).show()
+                                                }
+                                            }
+                                        }
+                                        else{
+                                            activity?.runOnUiThread {
                                                 Toast.makeText(
                                                     requireContext(),
-                                                    "Tente novamente, erro ao montar o Quiz 1",
+                                                    "Tente novamente, erro ao montar o Quiz 2",
                                                     Toast.LENGTH_SHORT
                                                 ).show()
-
-
-                                                Log.e("API Response", "Resposta JSON não contém o campo 'questions'")
                                             }
                                         }
                                         // Atualize o TextView correspondente com a pergunta
@@ -345,9 +353,9 @@ class SlideshowFragment : Fragment() {
                                             correctAnswers1.length == 1 &&
                                             correctAnswers2.length == 1 &&
                                             correctAnswers3.length == 1 &&
-                                            !correctAnswers1.isNullOrEmpty() &&
-                                            !correctAnswers2.isNullOrEmpty() &&
-                                            !correctAnswers3.isNullOrEmpty()
+                                            correctAnswers1.isNotEmpty() &&
+                                            correctAnswers2.isNotEmpty() &&
+                                            correctAnswers3.isNotEmpty()
                                         ) {
                                             firstLinearLayout.visibility = View.GONE
                                             quizCardView1.visibility = View.VISIBLE
@@ -362,7 +370,7 @@ class SlideshowFragment : Fragment() {
                                         else {
                                             Toast.makeText(
                                                 requireContext(),
-                                                "Tente novamente, erro ao montar o Quiz 2",
+                                                "Tente novamente, erro ao montar o Quiz 3",
                                                 Toast.LENGTH_SHORT
                                             ).show()
 
@@ -373,25 +381,24 @@ class SlideshowFragment : Fragment() {
 
                                     }
                                 } else {
-                                    Toast.makeText(
-                                        requireContext(),
-                                        "Tente novamente, erro ao montar o Quiz 3",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
-
-
-                                    Log.e("API Response", "Resposta JSON não contém o campo 'questions'")
+                                    activity?.runOnUiThread {
+                                        Toast.makeText(
+                                            requireContext(),
+                                            "Tente novamente, erro ao montar o Quiz 4",
+                                            Toast.LENGTH_SHORT
+                                        ).show()
+                                    }
                                 }
 
 
                             } else {
-                                Toast.makeText(
-                                    requireContext(),
-                                    "Resposta não é um JSON válido ",
-                                    Toast.LENGTH_SHORT
-                                ).show()
-
-                                Log.e("API Response", "Resposta não é um JSON válido")
+                                activity?.runOnUiThread {
+                                    Toast.makeText(
+                                        requireContext(),
+                                        "Resposta não é um Json valido",
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+                                }
                             }
                         } catch (e: JSONException) {
                             e.printStackTrace()
