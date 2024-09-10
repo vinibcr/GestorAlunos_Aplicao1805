@@ -7,4 +7,4 @@ Ele consiste em uma aplicação com funcionalidades de cadastrar dados de matér
  
 Por fim, um Quiz interagindo com os tópicos salvos, para reforçar o conteúdo, trazidos de uma API com o ChatGPT.
 
-hashtag#kotlin hashtag#Intellij hashtag#Android hashtag#ChatGPT
+#kotlin #Intellij #Android #ChatGPT
